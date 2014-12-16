@@ -28,7 +28,7 @@ public class Main {
 
         client.start();
 
-        LeaderSelector selector = new LeaderSelector(client, "/linux", listener);
+        LeaderSelector selector = new LeaderSelector(client, "/web-app", listener);
         selector.autoRequeue();  // not required, but this is behavior that you will probably expect
         selector.start();
 
