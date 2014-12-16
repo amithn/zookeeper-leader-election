@@ -1,7 +1,7 @@
 zookeeper-leader-election
 =========================
 
-Example shows how to implement Leader election using the Curator recipes with Zookeeper
+Example shows how to implement Leader election using the Curator recipes with Zookeeper.
 Run Zookeeper: 
 [voicestreams] ~/testbed/zookeeper/zookeeper-3.4.6/bin$ ./zkServer.sh  start
 
