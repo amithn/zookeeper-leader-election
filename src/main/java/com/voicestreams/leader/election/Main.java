@@ -10,7 +10,6 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        System.out.println("Hello World");
         String zookeeperConnectionString = "localhost:2181";
         RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
         CuratorFramework client = CuratorFrameworkFactory.newClient(zookeeperConnectionString, retryPolicy);
@@ -34,8 +33,8 @@ public class Main {
         selector.start();
 
         while (true) {
-            System.out.println(" -- live --");
-            Thread.sleep(10000);
+            System.out.print(".");
+            Thread.sleep(1000);
         }
     }
 }

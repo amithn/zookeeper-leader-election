@@ -1,7 +1,9 @@
 apply plugin: 'java'
+apply plugin:'application'
 
 sourceCompatibility = 1.7
 version = '1.0'
+mainClassName = "com.voicestreams.leader.election.Main"
 
 repositories {
     mavenCentral()
